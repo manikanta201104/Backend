@@ -15,6 +15,7 @@ app.get('/contact', (req, res) => {
     res.send('This is contact page');
 });
 
+
 app.get('/kanna', (req, res) => {
     res.send("<h1>This is Manikanta from kanna route</h1>");
 });

@@ -6,16 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/manikanta201104/Backend.git"
-  },
+
   "author": "Manikanta",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/manikanta201104/Backend/issues"
+
   },
-  "homepage": "https://github.com/manikanta201104/Backend#readme",
+
   "keywords": [],
   "dependencies": {
     "dotenv": "^16.4.7",
