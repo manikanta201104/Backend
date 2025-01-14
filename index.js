@@ -1,7 +1,9 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000; // Default to port 3000 if PORT is undefined
+
+console.log('Environment Variables:', process.env);
 
 app.get('/', (req, res) => {
     res.send('Hello World');
@@ -20,13 +22,14 @@ app.get('/honey', (req, res) => {
 });
 
 app.get('/kanna', (req, res) => {
-    res.send("<h1>This is Manikanta from kanna route</h1>");
+    res.send('<h1>This is Manikanta from kanna route</h1>');
 });
 
 app.listen(port, (err) => {
     if (err) {
         console.error(`Failed to start server: ${err.message}`);
     } else {
-        console.log(`Server is running on port ${port}`);
+        console.log(`Server is running on http://localhost:${port}`);
+        console.log(`PORT from .env: ${process.env.PORT}`);
     }
 });
