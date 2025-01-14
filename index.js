@@ -16,7 +16,7 @@ app.get('/contact', (req, res) => {
 });
 
 app.get('/honey', (req, res) => {
-    res.send('This is honey page');
+    res.send('I love u kannamma');
 });
 
 app.get('/kanna', (req, res) => {
